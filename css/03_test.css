@@ -1,0 +1,160 @@
+@import url(./00_style.css);
+
+.navBar>div:nth-child(3) {
+  background-color: var(--color1);
+  border-radius: 50px;
+}
+
+.navBar>div:nth-child(3)>a {
+  font-weight: bold;
+}
+
+.intro2 {
+  text-align: center;
+  text-indent: 0;
+  padding: -10px;
+}
+
+/*tab*/
+
+.tab {
+  /* background-color: #f1f1f1; */
+  width: 80%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px 40px;
+  /* transition: 0.3s; */
+  font-size: 30px;
+  font-family: 'Nanum Pen';
+  border-radius: 50px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--color2);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--color1);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Quicksand';
+  text-align: justify;
+  border: 5px dashed var(--color1);
+  border-radius: 10px;
+  margin: 20px auto 50px auto;
+  width: 80%;
+}
+
+/*TAB類到此為值*/
+
+/* form */
+form {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.question {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* .answer {
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+  } */
+
+label {
+  display: inline-block;
+  width: 90%;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 5px;
+  /* background-color: aqua; */
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+input[type="radio"]:hover,
+label:hover,
+input[type="radio"]:checked+label {
+  background-color: var(--color1);
+
+}
+
+form button {
+  /* display: block;
+  border: 1px solid var(--color3);
+  border-radius: 50px;
+  background-color: var(--color1);
+  height: 50px;
+  /* width: auto; */
+  font-family: 'Nanum Pen'; 
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin: 10px auto; 
+  border: 1px solid var(--color3);
+  border-radius: 50px;
+  background-color: var(--color1);
+}
+
+.middle {
+  margin: auto;
+  /* background-color: pink; */
+  text-align: center;
+}
+
+form button:hover,
+input[type="radio"]:hover,
+label:hover {
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--color3);
+}
+
+#result1,
+#result2,
+#result3 {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+#result1:not(:empty),
+#result2:not(:empty),
+#result3:not(:empty) {
+  background-color: var(--color1);
+  border-radius: 5px;
+  padding: 10px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daily English</title>
+    <link rel="icon" href="./img/000_icon.png" type="image/png">
+    <link rel="stylesheet" href="./css/05_contact_us.css">
+
+    <style>
+        @font-face {
+            font-family: 'Fan Song';
+            src: url(./font/AdobeFangsongStd-Regular.otf);
+        }
+
+        @font-face {
+            font-family: 'Nanum Pen';
+            src: url(./font/NanumPenScript-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Inconsolata';
+            src: url(./font/Inconsolata-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Zilla Slab';
+            src: url(./font/ZillaSlab-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url(./font/Quicksand-VariableFont_wght.ttf);
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 上方導覽器 選項: 首頁 今日單字 今日測試 今日推薦文章 聯絡我們 -->
+    <span class="top_pic">
+        <a href="./01_homepage.html"><img src="./img/000_homepage_head.png" id="head"></a>
+        <nav class="navBar">
+
+            <div><a href="./01_homepage.html">Daily English</a></div>
+            <div><a href="./02_vocab.html">今日單字</a></div>
+            <div><a href="./03_test.html">今日測驗</a></div>
+            <div><a href="./04_article.html">推薦文章</a></div>
+            <div><a href="./05_contact_us.html">聯絡我們</a></div>
+
+        </nav>
+        <br>
+    </span>
+    <a href="#">
+        <div class="top ld ld-bounceAlt"></div>
+    </a>
+    <!-- https://loading.io/animation/ -->
+    <!-- 首頁顯示: 一小段網站介紹 圖片+選項 頁底放聯絡資訊 -->
+    <div>
+        <div class="flex-container" autocomplete="none">
+            <h2>Contact Us</h2>
+            <p>有什麼疑難雜症請聯繫我們</p>
+            <hr>
+            <form>
+                <div class="criteria">
+                    <label for="name" class="inputText"><span class="textRed">*</span><span>姓名</span>Name：</label>
+                    <input type="text" id="name" required placeholder="王大同 or Wang">
+                </div>
+                <div class="criteria">
+                    <label for="email" class="inputText"><span class="textRed">*</span>email：</label>
+                    <input type="email" id="email" required placeholder="123@abc.com">
+                </div>
+                <div class="criteria">
+                    <label for="subject" class="inputText"><span>主旨</span>Subject：</label>
+                    <input type="text" id="subject">
+                </div>
+                <div class="criteria">
+                    <label for="message" class="inputText"><span>訊息</span>Message：</label><br>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="agreePolicy" id="agreePolicy" required>
+                    <label for="agreePolicy" class="agreePolicyText">我已詳閱<a href="./06_policy.html"
+                            target="_blank">隱私權政策</a>並同意以上內容</label>
+                </div>
+                <div><input type="submit" value="送出" id="checkValid" onclick="submitForm()"></div>
+            </form>
+        </div>
+        <!-- onclick="submitForm()" -->
+    </div>
+    <br><br><br>
+    <div class="footer">
+        <div class="footer-left">© 2023 All rights reserved and designed by Daily English</div>
+        <div class="footer-right">
+            <a href="./06_policy.html" target="_blank">Privacy Policy</a>
+        </div>
+    </div>
+
+    <script>
+        
+
+        function submitForm() {
+            var x = document.getElementById("name").checkValidity();
+            var y = document.getElementById("email").checkValidity();
+            var z = document.getElementById("agreePolicy").checked;
+            console.log(x);
+            console.log(y);
+            console.log(z);
+            
+            if (x == false || y == false) {
+                alert("請填寫完整");
+            } else if (z == false) {
+                alert("請詳閱隱私權政策");
+            } else {
+                alert("感謝您的填寫，近期請留意信箱使否有收到回應！")
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

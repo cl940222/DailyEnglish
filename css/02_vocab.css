@@ -1,0 +1,127 @@
+@import url(./00_style.css);
+
+.navBar>div:nth-child(2) {
+    background-color: var(--color1);
+    border-radius: 50px;
+}
+
+.navBar>div:nth-child(2)>a {
+    font-weight: bold;
+}
+
+/*tab*/
+
+.tab {
+    /* background-color: #f1f1f1; */
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px 40px;
+    /* transition: 0.3s; */
+    font-size: 30px;
+    font-family: 'Nanum Pen';
+    border-radius: 50px;
+    
+  }
+
+  /* Change background color of buttons on hover */
+   .tab button:hover {
+    background-color: var(--color2);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: var(--color1);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Zilla Slab';
+    text-align: justify;
+    border: 5px dashed var(--color1);
+    border-radius: 10px;
+    margin: 20px auto 50px auto;
+    width: 80%;
+  }
+
+
+
+  /*TAB類到此為值*/
+
+
+.intro2 {
+    text-align: center;
+    text-indent: 0;
+    padding: -10px;
+}
+
+.grid2 {
+    display: block;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Zilla Slab';
+    text-align: justify;
+    border: 5px dashed var(--color1);
+    border-radius: 10px;
+    margin: 20px auto 50px auto;
+    width: 80%;
+    /* padding: 10px 80px 10px 80px; */
+    visibility: hidden;
+}
+
+.vocab2 {
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 20px auto 20px auto;
+    /* background-color: pink; */
+    padding: 5px;
+    border-bottom: 1px dotted var(--color2);
+}
+
+.word {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Nanum Pen';
+    text-align: left;
+    border-bottom: 2px solid var(--color1);
+    margin: 20px 10px 0px 10px;
+}
+
+.meaning, .sentence, .meaning_chinese {
+    padding: 0 30px;
+}
+
+.meaning, .meaning_chinese, .sentence_chinese {
+    font-size: 18px;
+}
+
+.meaning_chinese, .sentence_chinese {
+    font-family: 'Fan Song';
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.type {
+    color: var(--color3);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.vocab2:last-child {
+    border-bottom: none;
+}
+

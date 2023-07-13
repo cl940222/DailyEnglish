@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daily English</title>
+    <link rel="icon" href="./img/000_icon.png" type="image/png">
+    <link rel="stylesheet" href="./css/04_article.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- https://www.youtube.com/watch?v=1ydfKDwsYbU -->
+
+    <style>
+        @font-face {
+            font-family: 'Fan Song';
+            src: url(./font/AdobeFangsongStd-Regular.otf);
+        }
+
+        @font-face {
+            font-family: 'Nanum Pen';
+            src: url(./font/NanumPenScript-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Inconsolata';
+            src: url(./font/Inconsolata-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Zilla Slab';
+            src: url(./font/ZillaSlab-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url(./font/Quicksand-VariableFont_wght.ttf);
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 上方導覽器 選項: 首頁 今日單字 今日測試 今日推薦文章 聯絡我們 -->
+    <span class="top_pic">
+        <a href="./01_homepage.html"><img src="./img/000_homepage_head.png" id="head"></a>
+        <nav class="navBar">
+
+            <div><a href="./01_homepage.html">Daily English</a></div>
+            <div><a href="./02_vocab.html">今日單字</a></div>
+            <div><a href="./03_test.html">今日測驗</a></div>
+            <div><a href="./04_article.html">推薦文章</a></div>
+            <div><a href="./05_contact_us.html">聯絡我們</a></div>
+
+        </nav>
+        <br>
+    </span>
+    <a href="#">
+        <div class="top ld ld-bounceAlt"></div>
+    </a>
+    <!-- https://loading.io/animation/ -->
+    <!-- 首頁顯示: 一小段網站介紹 圖片+選項 頁底放聯絡資訊 -->
+    <div>
+        <div class="intro">
+            <h2>Article for Today</h2>
+            <p class="intro2">今日為您推薦的文章
+                <br><b style="border-radius: 50px; 
+                              background-color: var(--color1);
+                              padding: 5px;">
+                    請選擇一個階級閱讀文章</b>
+            </p>
+        </div>
+
+        <div class="tab">
+
+            <button class="tablinks" onclick="openCity(event, 'elementary')">
+                Elementary
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'intermediate')">
+                Intermediate
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'advanced')">
+                Advanced
+            </button>
+
+        </div>
+    </div>
+
+    <div class="tabcontent" id="elementary">
+        <div class="story">
+            <h2>The Boy who cried 'Wolf'</h2>
+            <h2 class="translator">狼來了</h2>
+            <div>Once there was a shepherd boy, who had to look after a flock of sheep. One day, he felt bored and
+                decided to play a trick on the villagers. He shouted, “Help! Wolf! Wolf!”
+                <div class="translator">從前有一個牧羊男孩，他負責照顧一群羊。有一天，他感到無聊，決定給村民玩個把戲。他大喊：“救命！狼來了！”</div>
+            </div>
+            <div>The villagers heard his cries and rushed out of the village to help the shepherd boy. When they reached
+                him, they asked, “Where is the wolf?”
+                <div class="translator">村民們聽到他的呼喊，匆忙從村子跑出來幫助牧羊男孩。當他們到達時，他們問：“狼在哪裡？”</div>
+            </div>
+            <div>The shepherd boy laughed loudly, “Ha, Ha, Ha! I fooled you all. I was only playing a trick on you.”
+                <div class="translator">牧羊男孩大聲笑著說：“哈哈哈！我騙了你們。我只是在逗你們玩。”</div>
+            </div>
+            <div>A few days later, the shepherd boy played the trick again.
+                <div class="translator">幾天後，牧羊男孩又玩起了同樣的把戲。</div>
+            </div>
+            <div>He cried, “Help! Help! Wolf! Wolf!” Again, the villagers rushed up the hill to help him and again they
+                found that the boy had tricked them. They were very angry with him for being so naughty.
+                <div class="translator">他喊道：“救命！救命！狼來了！救命！有人幫忙！”村民們再次匆忙上山幫助他，但他們發現男孩又騙了他們一次。他們對他非常生氣，因為他太淘氣了。</div>
+            </div>
+            <div>Then, sometime later, a wolf really went into the field. The wolf attacked one sheep, and then another
+                and another. The shepherd boy ran towards the village shouting, “Help! Help! Wolf! Help! Somebody!”
+                <div class="translator">後來，有一天，一隻真正的狼進入了牧場。狼襲擊了一隻羊，然後又襲擊了另一隻、再一隻。牧羊男孩跑向村子大喊：“救命！救命！狼來了！救命！有人來幫忙！”</div>
+            </div>
+            <div>The villagers heard his cries but they laughed because they thought it was just another trick.
+                <div class="translator">村民們聽到他的呼喊，但他們笑了，因為他們以為這只是另一個把戲。</div>
+            </div>
+            <div>The boy ran to the nearest villager and said, “A wolf is attacking the sheep. I lied before, but this
+                time it is true!”
+                <div class="translator">男孩跑向最近的一位村民，說：“一隻狼正在襲擊羊群。之前我撒了謊，但這次是真的！”</div>
+            </div>
+            <div>Finally, the villagers went to look. It was true. They could see the wolf running away and many dead
+                sheep lying on the grass.
+                <div class="translator">最終，村民們去看了。果然如此。他們看到狼在逃跑，草地上有許多死去的羊。</div>
+            </div>
+            <div>We may not believe someone who often tells lies, even when he tells the truth.
+                <div class="translator">我們可能不會相信經常說謊的人，即使他說的是真話。</div>
+            </div>
+            <div>(Note: This story is a fictional creation for young readers. Source: <a href="https://www.kidsworldfun.com">www.kidsworldfun.com</a>)
+                <div class="translator">這個故事是為年輕讀者創作的虛構故事。來源：<a href="https://www.kidsworldfun.com">www.kidsworldfun.com</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabcontent" id="intermediate">
+        <div class="story">
+            <h2>The Solar System</h2>
+            <h2 class="translator">太陽系</h2>
+            <div>The solar system is an amazing place, full of wonders and mysteries. It consists of the Sun and all the
+                objects that orbit around it, including planets, moons, asteroids, and comets.
+                <div class="translator">太陽系是一個驚人的地方，充滿著奇觀和神秘。它包括太陽和圍繞著它運行的所有物體，包括行星、衛星、小行星和彗星。</div>
+            </div>
+            <div>At the center of the solar system is the Sun, a massive ball of hot, glowing gas. It provides heat and
+                light to all the planets. The Sun's gravity holds the solar system together.
+                <div class="translator">太陽位於太陽系的中心，是一個巨大的熱氣球。它為所有行星提供熱量和光線。太陽的引力使太陽系保持結合。</div>
+            </div>
+            <div>There are eight planets in our solar system. Starting from the closest to the Sun, they are Mercury,
+                Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Each planet has its unique characteristics and
+                features.
+                <div class="translator">太陽系中有八個行星。從最靠近太陽的行星開始，它們分別是水星、金星、地球、火星、木星、土星、天王星和海王星。每個行星都有其獨特的特點和特徵。</div>
+            </div>
+            <div>The inner planets, Mercury, Venus, Earth, and Mars, are made mostly of rock and metal. They are known
+                as terrestrial planets. These planets have solid surfaces and are relatively smaller in size compared to
+                the outer planets.
+                <div class="translator">內部行星包括水星、金星、地球和火星，它們主要由岩石和金屬組成。它們被稱為類地行星。這些行星有著固體表面，相對於外部行星而言較小。</div>
+            </div>
+            <div>Jupiter, Saturn, Uranus, and Neptune are the outer planets, also known as gas giants. They are much
+                larger in size and mainly composed of gas, such as hydrogen and helium. These planets have thick
+                atmospheres and many moons orbiting around them.
+                <div class="translator">木星、土星、天王星和海王星是外部行星，也被稱為氣體巨星。它們體積更大，主要由氫和氦等氣體組成。這些行星有著厚厚的大氣層，並有許多衛星圍繞著它們運行。</div>
+            </div>
+            <div>Earth, the third planet from the Sun, is the home to a diverse range of life forms, including humans.
+                It has a suitable atmosphere and conditions for supporting life. Earth's moon, called the Moon, is the only
+                natural satellite orbiting our planet.
+                <div class="translator">地球是距離太陽第三近的行星，是各種生命形式，包括人類的家園。它具有適合支持生命的大氣和條件。地球的衛星，稱為月球，是環繞我們的行星的唯一自然衛星。</div>
+            </div>
+            <div>Apart from planets, the solar system also contains smaller objects. Asteroids are rocky objects that
+                orbit the Sun, mostly found in the asteroid belt between Mars and Jupiter. Comets are icy bodies that
+                come from the outer regions of the solar system and develop a glowing tail as they approach the Sun.
+                <div class="translator">除了行星，太陽系還包含較小的物體。小行星是圍繞太陽運行的岩石物體，主要分布在火星和木星之間的小行星帶中。彗星是來自太陽系外區域的冰體，當它們靠近太陽時會發展出一條發光的尾巴。</div>
+            </div>
+            <div>Studying the solar system helps scientists understand the formation and evolution of planets, the
+                possibility of life beyond Earth, and the dynamics of our universe.
+                <div class="translator">研究太陽系有助於科學家了解行星的形成和演化，地球之外的生命可能性以及我們宇宙的動力學。</div>
+            </div>
+            <div>As we continue to explore and learn about the solar system, new discoveries and exciting mysteries are
+                waiting to be revealed.
+                <div class="translator">隨著我們繼續探索和學習太陽系，新的發現和令人興奮的神秘正等待著被揭示。</div>
+            </div>
+            <div>(Note: This article is based on scientific information provided by NASA. Source: <a href="https://www.nasa.gov">www.nasa.gov</a>)
+                <div class="translator">本文章基於美國國家航空暨太空總署提供的科學資訊。來源：<a href="https://www.nasa.gov">www.nasa.gov</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabcontent" id="advanced">
+        <div class="story">
+            <h2>The Impact of Climate Change on Biodiversity</h2>
+            <h2 class="translator">氣候變遷對生物多樣性的影響</h2>
+            <div>Climate change is a pressing issue that has significant consequences for biodiversity worldwide. As the
+                Earth's climate continues to warm, it disrupts ecosystems and threatens the survival of numerous
+                species.
+                <div class="translator">氣候變遷是一個迫切的問題，對全球生物多樣性產生重大影響。隨著地球氣候持續升溫，它破壞生態系統，威脅著眾多物種的生存。</div>
+            </div>
+            <div>Rising temperatures have led to changes in weather patterns and shifts in habitats. Many plant and animal
+                species are struggling to adapt to these rapid changes. For example, polar bears are losing their sea
+                ice habitats, making it difficult for them to hunt for food. Coral reefs, known as the rainforests of
+                the sea, are experiencing bleaching events due to increased water temperatures, causing the loss of
+                vibrant marine life.
+                <div class="translator">升高的溫度導致了天氣模式的變化和棲息地的轉移。許多植物和動物物種正在努力適應這些快速變化。例如，北極熊失去了海冰棲息地，使它們難以覓食。珊瑚礁被稱為海洋的熱帶雨林，由於水溫升高而出現了漂白事件，導致豐富的海洋生物損失。</div>
+            </div>
+            <div>The impact of climate change on biodiversity extends beyond individual species. It affects the intricate
+                web of interactions between organisms in ecosystems. As species face challenges in their survival, it
+                can disrupt the balance of predator-prey relationships, pollination processes, and the overall
+                functioning of ecosystems.
+                <div class="translator">氣候變遷對生物多樣性的影響不僅僅局限於個別物種。它影響著生態系統中生物之間錯綜複雜的相互作用網絡。當物種面臨生存挑戰時，這可能破壞掠食者與被掠食者之間的平衡、授粉過程以及生態系統的整體運作。</div>
+            </div>
+            <div>Furthermore, climate change exacerbates existing threats to biodiversity, such as habitat destruction and
+                pollution. These combined factors put additional pressure on vulnerable species and increase the risk of
+                extinction.
+                <div class="translator">此外，氣候變遷加劇了對生物多樣性的現有威脅，如棲息地破壞和污染。這些綜合因素對脆弱物種施加了額外壓力，增加了物種滅絕的風險。</div>
+            </div>
+            <div>Addressing climate change and protecting biodiversity requires global collaboration and concerted
+                efforts. Conservation measures, such as the establishment of protected areas, sustainable land and
+                resource management practices, and reducing greenhouse gas emissions, are crucial steps towards
+                mitigating the impacts of climate change on biodiversity.
+                <div class="translator">應對氣候變遷並保護生物多樣性需要全球合作和協同努力。保護措施，如建立保護區、可持續土地和資源管理實踐以及減少溫室氣體排放，是減輕氣候變遷對生物多樣性影響的關鍵步驟。</div>
+            </div>
+            <div>It is essential for individuals, communities, and governments to prioritize environmental stewardship and
+                take proactive measures to reduce their carbon footprint. By promoting sustainability, supporting
+                conservation initiatives, and raising awareness about the importance of biodiversity, we can work
+                towards a more resilient and thriving planet.
+                <div class="translator">個人、社區和政府有必要優先考慮環境保護，採取積極措施減少碳足跡。通過促進可持續發展、支持保育倡議並提高人們對生物多樣性重要性的意識，我們可以共同努力實現一個更具彈性和繁榮的地球。</div>
+            </div>
+            <div>(Note: This article is sourced from National Geographic, a renowned publication known for its in-depth
+                coverage of environmental and scientific topics. Source: <a href="https://www.nationalgeographic.com" target="_blank">www.nationalgeographic.com</a>)
+                <div class="translator">注：本文資料來源於著名出版物《國家地理》，以其深入報導環境和科學議題而聞名。來源：<a href="https://www.nationalgeographic.com" target="_blank">www.nationalgeographic.com</a></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="footer">
+        <div class="footer-left">© 2023 All rights reserved and designed by Daily English</div>
+        <div class="footer-right">
+            <a href="./06_policy.html" target="_blank">Privacy Policy</a>
+        </div>
+    </div>
+
+
+    <script src="./js/create_popper_index.js"></script>
+
+    <script src="./js/04_article.js"></script>
+
+</body>
+
+</html>

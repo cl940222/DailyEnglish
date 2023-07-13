@@ -1,0 +1,149 @@
+@import url(./loading.css);
+
+html{
+    --color1: rgb(230, 210, 181);
+    --color2: #a3a3a3;
+    --color3: rgb(194, 159, 107);
+    --color4: rgb(158, 1, 1);
+    --color4-trans: rgba(158, 1, 1, 0.479);
+}
+
+body {
+    font-family: 'Fan Song', cursive;
+    font-size: 18px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.top_pic {
+    display: block;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    margin: 0 auto auto auto;
+    background-color: white;
+    align-items: center;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+    border-bottom: 1px solid var(--color2);
+    align-self: center;
+}
+
+.navBar>div {
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    text-align: center;
+    line-height: 20px;
+    transition-duration: 1s;
+    transition-property: background-color, background-clip, border-radius;
+}
+
+.navBar>div:hover {
+    background-color: #e0dbdb;
+    background-clip: padding-box;
+    border-radius: 50px;
+}
+
+.navBar>div a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.navBar>div:nth-child(1) a {
+    font-weight: bold;
+    font-family: 'Nanum Pen', cursive;
+    font-size: 24px;
+}
+
+#head {
+    height: 200px;
+    display: block;
+    margin: 0px auto 0 auto;
+    /* position: fixed; */
+}
+
+
+.top {
+    /* background-color: green; */
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    background-image: url(../img/000_top_icon.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-duration: 5s;
+}
+
+.intro {
+    /* background-color: pink; */
+    box-sizing: border-box;
+    padding: 30px;
+    width: 80%;
+    margin: 0px auto 20px auto;
+    border: 5px dashed var(--color1);
+    border-radius: 10px;
+    text-align: left;
+    text-indent: 40px;
+}
+
+h2 {
+    font-family: 'Nanum Pen';
+    font-size: 40px;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    text-indent: 0;
+}
+
+.footer {
+    width: 80%;
+    height: 40px;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    border-radius: 50px 50px 0 0;
+    /* position: sticky;
+    bottom: 0px; */
+    margin: auto auto 0 auto;
+}
+
+.footer div {
+    font-size: 18px;
+    font-family: 'Nanum Pen';
+}
+
+.footer a:hover {
+    color: var(--color3);
+}
+
+.footer-left {
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.footer-right {
+    margin-left: auto;
+    margin-right: 50px;
+    font-size: 13px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--color4);
+}

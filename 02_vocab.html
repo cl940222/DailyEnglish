@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daily English</title>
+    <link rel="icon" href="./img/000_icon.png" type="image/png">
+    <link rel="stylesheet" href="./css/02_vocab.css">
+
+    <style>
+        @font-face {
+            font-family: 'Fan Song';
+            src: url(./font/AdobeFangsongStd-Regular.otf);
+        }
+
+        @font-face {
+            font-family: 'Nanum Pen';
+            src: url(./font/NanumPenScript-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Inconsolata';
+            src: url(./font/Inconsolata-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Zilla Slab';
+            src: url(./font/ZillaSlab-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            src: url(./font/Quicksand-VariableFont_wght.ttf);
+        }
+
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 上方導覽器 選項: 首頁 今日單字 今日測試 今日推薦文章 聯絡我們 -->
+    <span class="top_pic">
+        <a href="./01_homepage.html"><img src="./img/000_homepage_head.png" id="head"></a>
+        <nav class="navBar">
+
+            <div><a href="./01_homepage.html">Daily English</a></div>
+            <div><a href="./02_vocab.html">今日單字</a></div>
+            <div><a href="./03_test.html">今日測驗</a></div>
+            <div><a href="./04_article.html">推薦文章</a></div>
+            <div><a href="./05_contact_us.html">聯絡我們</a></div>
+
+        </nav>
+        <br>
+    </span>
+    <a href="#">
+        <div class="top ld ld-bounceAlt"></div>
+    </a>
+    <!-- https://loading.io/animation/ -->
+    <!-- 首頁顯示: 一小段網站介紹 圖片+選項 頁底放聯絡資訊 -->
+    <div>
+        <div class="intro">
+            <h2>Vocabulary for Today</h2>
+            <p class="intro2">根據你的英文能力學習10個英文單字
+                <br><b style="border-radius: 50px; 
+                              background-color: var(--color1);
+                              padding: 5px;">
+                              請選擇一個階級開始學習</b>
+            </p>
+        </div>
+
+        <div class="tab">
+
+            <button class="tablinks" onclick="openCity(event, 'elementary')">
+                Elementary
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'intermediate')">
+                Intermediate
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'advanced')">
+                Advanced
+            </button>
+
+        </div>
+    </div>
+    <div class="tabcontent" id="elementary">
+        <div class="vocab2">
+            <p class="word">opposite</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                located or situated on the other side or at a
+                different end of a particular space.
+                <br>
+                <span class="meaning_chinese">另一邊的，相反的，對面的</span>
+            </p>
+            <p class="sentence">
+                ▪ My brother and I live on opposite sides of the city.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    我哥哥和我住在城裡兩個方向相反的區。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">plural</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                a word or form that expresses more than one
+                <br>
+                <span class="meaning_chinese">複數形式</span>
+            </p>
+            <p class="sentence">
+                ▪ "Woman" in the plural is "women".
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    woman 的複數形式是 women。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">verb</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                a word or phrase that describes an action, condition, or experience
+                <br>
+                <span class="meaning_chinese">動詞</span>
+            </p>
+            <p class="sentence">
+                ▪ The words "run", "keep", and "feel" are all verbs.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    run，keep 和 feel 都是動詞。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">sentence</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                a group of words, usually containing a verb, that expresses a
+                thought in the form of a statement, question, instruction, or
+                exclamation and starts with a capital letter when written
+                <br>
+                <span class="meaning_chinese">句，句子</span>
+            </p>
+            <p class="sentence">
+                ▪ Your conclusion is good, but the final sentence is too long
+                and complicated.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    你的結論沒錯，但最後一句話太長太複雜。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">synonym</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                a word or phrase that has the same or nearly
+                the same meaning as another word or phrase in
+                the same language
+                <br>
+                <span class="meaning_chinese">同義詞，近義詞</span>
+            </p>
+            <p class="sentence">
+                ▪ The words "small" and "little" are synonyms.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    small 和 little 是同義詞。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">accomodate</p>
+            <p class="meaning">
+                <span class="type">v.</span>
+                &nbsp;
+                to provide with a place to live or to be stored in
+                <br>
+                <span class="meaning_chinese">為…提供住宿；容納；為…提供空間</span>
+            </p>
+            <p class="sentence">
+                ▪ There wasn't enough space to accommodate the files.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    沒有足夠的空間存放這些檔案。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">week</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                a period of seven days, especially either from Monday to Sunday or
+                from Sunday to Saturday
+                <br>
+                <span class="meaning_chinese">星期，週（尤指從星期一到星期日或從星期日到星期六）
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ It usually takes about four weeks to get the forms processed.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    處理這些表格通常需要四週左右的時間。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">spelling</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                forming words with the correct letters in the correct order, or the
+                ability to do this
+                <br>
+                <span class="meaning_chinese">拼寫；拼寫能力
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ My computer has a program which corrects my spelling.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    我的電腦有糾正拼寫錯誤的程式。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">capital</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                a city that is the centre of government of a country or
+                smaller political area
+                <br>
+                <span class="meaning_chinese">首都；首府；省會
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ Australia's capital city is Canberra.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    澳大利亞的首都是坎培拉。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">present continuous</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                the verb form used for actions or events that are happening or
+                developing now
+                <br>
+                <span class="meaning_chinese">現在進行式
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ The sentences "The kids are watching TV" and "The weather is
+                getting colder" are in the present continuous.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    句子 The children are watching television 和 The weather
+                    is getting colder 用的是現在進行式。
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="tabcontent" id="intermediate">
+        <div class="vocab2">
+            <p class="word">ambiguous</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                having or expressing more than one possible meaning, sometimes 
+                intentionally
+                <br>
+                <span class="meaning_chinese">含糊不清的；引起歧義的，模棱兩可的；不明確的</span>
+            </p>
+            <p class="sentence">
+                ▪ His reply to my question was somewhat ambiguous.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    他對我的提問回答得有些含糊不清。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">conscientious</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                putting a lot of effort into your work
+                <br>
+                <span class="meaning_chinese">認真的；盡心盡責的；一絲不苟的</span>
+            </p>
+            <p class="sentence">
+                ▪ Lisa is a conscientious student who always completes her 
+                assignments on time.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    麗莎是一個認真的學生，總是按時完成作業。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">diligent</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                careful and using a lot of effort
+                <br>
+                <span class="meaning_chinese">認真刻苦的，勤奮的，勤勞的</span>
+            </p>
+            <p class="sentence">
+                ▪ Their lawyer was extremely diligent in preparing their case.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    律師為他們這個案子做了認真紮實的準備。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">impulsive</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                showing behaviour in which you do things suddenly without any 
+                planning and without considering the effects they may have
+                <br>
+                <span class="meaning_chinese">衝動的</span>
+            </p>
+            <p class="sentence">
+                ▪ Don't be so impulsive - think before you act.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    不要如此衝動——要三思而後行。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">resilient</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                able to quickly return to a previous good condition
+                <br>
+                <span class="meaning_chinese">有彈性的；能復原的；有復原力的；適應性強的</span>
+            </p>
+            <p class="sentence">
+                ▪ This rubber ball is very resilient and immediately springs back into shape.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    這種橡膠球很有彈性，可以立即恢復原來的形狀。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">exquisite</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                very beautiful and delicate
+                <br>
+                <span class="meaning_chinese">精美的；精緻的；優雅的</span>
+            </p>
+            <p class="sentence">
+                ▪ She has exquisite taste.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    她品味高雅。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">inevitable</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                certain to happen and unable to be avoided or prevented
+                <br>
+                <span class="meaning_chinese">不可避免的；必然發生的
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ The accident was the inevitable outcome of carelessness.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    這次意外是粗心導致的必然結果。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">tenacious</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                holding tightly onto something, or keeping an opinion in 
+                a determined way
+                <br>
+                <span class="meaning_chinese">緊握的；頑固的；固執的
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ There has been tenacious local opposition to the new airport.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    當地人一直堅決反對建這個新機場。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">peculiar</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                unusual and strange, sometimes in an unpleasant way
+                <br>
+                <span class="meaning_chinese">奇怪的，古怪的
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ She has the most peculiar ideas.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    她的想法非常古怪。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">versatile</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                able to change easily from one activity to another or able to 
+                be used for many different purposes
+                <br>
+                <span class="meaning_chinese">多種用途的；萬用的；多才多藝的
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ He's a very versatile young actor who's as happy in highbrow 
+                dramas as he is in TV comedies.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    他是一個非常多才多藝的年輕演員，無論是演高雅電影還是電視喜劇都一樣得心應手。
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="tabcontent" id="advanced">
+        <div class="vocab2">
+            <p class="word">ubiquitous</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                seeming to be everywhere
+                <br>
+                <span class="meaning_chinese">普遍存在的，似乎無處不在的</span>
+            </p>
+            <p class="sentence">
+                ▪ Leather is very much in fashion this season, as is 
+                the ubiquitous denim.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    皮裝在這個季節非常流行，當然牛仔服也似乎無處不在。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">ephemeral </p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                lasting for only a short time
+                <br>
+                <span class="meaning_chinese">短暫的，極短的；轉瞬即逝的</span>
+            </p>
+            <p class="sentence">
+                ▪ Fame in the world of rock and pop is largely ephemeral.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    在搖滾和流行音樂界，名聲大多轉瞬即逝。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">serendipity</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                the fact of finding interesting or valuable things by chance
+                <br>
+                <span class="meaning_chinese">機緣，幸運</span>
+            </p>
+            <p class="sentence">
+                ▪ I found the perfect birthday gift for my friend by serendipity 
+                while browsing through a vintage store.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    我在一家古董店逛的時候，意外地找到了一份完美的生日禮物。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">mellifluous</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                having a pleasant and flowing sound
+                <br>
+                <span class="meaning_chinese">聲音甜美的；圓潤流暢的</span>
+            </p>
+            <p class="sentence">
+                ▪ the mellifluous sound of the cello
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    大提琴甜美圓潤的樂音
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">idiosyncrasy</p>
+            <p class="meaning">
+                <span class="type">n.</span>
+                &nbsp;
+                a strange or unusual habit, way of behaving, or feature that someone 
+                or something has
+                <br>
+                <span class="meaning_chinese">癖好，怪癖；特徵</span>
+            </p>
+            <p class="sentence">
+                ▪ She often cracks her knuckles when she's speaking - it's one of 
+                her little idiosyncrasies.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    她講話時常常將指節捏得哢哢作響，這是她的一個小怪癖。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">pernicious</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                having a very harmful effect or influence
+                <br>
+                <span class="meaning_chinese">極其有害的；惡性的；惡劣的</span>
+            </p>
+            <p class="sentence">
+                ▪ The cuts in government funding have had a pernicious 
+                effect on local health services.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    政府經費的縮減對地方醫衛服務產生了極為惡劣的影響。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">esoteric</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                very unusual and understood or liked by only a small number of 
+                people, especially those with special knowledge
+                <br>
+                <span class="meaning_chinese">極不尋常的；只有少數人才懂的；限於小圈子的
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ He has an esoteric collection of old toys and games.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    他收藏了一批極罕見的老玩具和遊戲。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">sagacious</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                having or showing understanding and the ability to make good 
+                judgments
+                <br>
+                <span class="meaning_chinese">聰慧的，洞察事理的； 睿智的
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ He is a wise and sagacious leader who always makes wise decisions.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    他是一位聰明而富有智慧的領導者，總是能夠做出明智的決策。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">vicarious</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                experienced as a result of watching, listening to, or reading 
+                about the activities of other people, rather than by doing the 
+                activities yourself
+                <br>
+                <span class="meaning_chinese">間接感受到的；間接獲得的
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ She took a vicarious pleasure in her friend's achievements.
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    她為朋友的成就感到喜悅。
+                </span>
+            </p>
+        </div>
+        <div class="vocab2">
+            <p class="word">ostentatious</p>
+            <p class="meaning">
+                <span class="type">adj.</span>
+                &nbsp;
+                too obviously showing your money, possessions, or power, in an 
+                attempt to make other people notice and admire you
+                <br>
+                <span class="meaning_chinese">鋪張的，擺闊的；炫耀的，賣弄的；招搖的
+                </span>
+            </p>
+            <p class="sentence">
+                ▪ They criticized the ostentatious lifestyle of their leaders
+                <br>
+                <span class="sentence_chinese">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    他們批評領導們鋪張的生活方式。
+                </span>
+            </p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="footer">
+        <div class="footer-left">© 2023 All rights reserved and designed by Daily English</div>
+        <div class="footer-right">
+            <a href="./06_policy.html" target="_blank">Privacy Policy</a>
+        </div>
+    </div>
+    <script src="./js/02_vocab.js"></script>
+
+</body>
+
+</html>

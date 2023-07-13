@@ -1,0 +1,130 @@
+@import url(./00_style.css);
+
+.navBar>div:nth-child(4) {
+    background-color: var(--color1);
+    border-radius: 50px;
+}
+
+.navBar>div:nth-child(4)>a {
+    font-weight: bold;
+}
+
+.intro2 {
+    text-align: center;
+    text-indent: 0;
+    padding: -10px;
+}
+
+
+/*tab*/
+.tab {
+    /* background-color: #f1f1f1; */
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px 40px;
+    /* transition: 0.3s; */
+    font-size: 30px;
+    font-family: 'Nanum Pen';
+    border-radius: 50px;
+  }
+
+  /* Change background color of buttons on hover */
+   .tab button:hover {
+    background-color: var(--color2);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: var(--color1);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Quicksand';
+    text-align: justify;
+    border: 5px dashed var(--color1);
+    border-radius: 10px;
+    margin: 20px auto 50px auto;
+    width: 80%;
+  }
+
+  /*TAB類到此為值*/
+
+  .story {
+    margin: 10px 70px 50px 70px;
+    text-indent: 20px;
+    line-height: 35px;
+  }
+
+  .story>h2 {
+    padding: 50px 0 0 0;
+  }
+
+  .story>div {
+    margin: 20px 0;
+  }
+
+  .story>h2:nth-of-type(2),
+  .translator    {
+    font-family: 'Fan Song';
+    background-color: var(--color1);
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 0 auto 0 auto;
+    display: none;
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .story>h2:nth-of-type(1):hover+h2:nth-of-type(2),
+  div:hover>div {
+    display: block;
+    font-weight: initial;
+    color: black;
+  }
+
+  .story>h2:nth-of-type(1):hover,
+  .story>div:hover {
+    /* color: rgb(13, 62, 136); */
+    color: var(--color4);
+  }
+
+  .story>div:hover {
+    font-weight: 500;
+  }
+
+  .story>h2:nth-of-type(1):hover+h2:nth-of-type(2)::before,
+  .story>div:hover>div::before {
+    content: '譯：';
+    font-size: 16px;
+    color: var(--color4);
+    font-weight: bold;
+  }
+
+  .story>div:last-child {
+    font-size: smaller;
+    color: var(--color2);
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color3);
+  }
+  
+  
