@@ -80,15 +80,21 @@ function result3(event) {
 function resetEleForm(event) {
     event.preventDefault();
     document.getElementById("eleForm").reset();
+    document.getElementById('result1').innerHTML = '';
+    window.scrollTo(0,0);
 }
 
 function resetIntForm(event) {
     event.preventDefault();
     document.getElementById("intForm").reset();
+    document.getElementById('result2').innerHTML = '';
+    window.scrollTo(0,0);
 }
 
 function resetAdvForm(event) {
     event.preventDefault();
     document.getElementById("advForm").reset();
+    document.getElementById('result3').innerHTML = '';
+    window.scrollTo(0,0);
 }
 
